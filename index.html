@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK-Web-solutions</title>
+    <meta name="description"
+        content="MK Web Solutions - Modern Frontend Websites with clean code and responsive design.">
+    <meta name="keywords" content="Frontend, Web Development, Tailwind, JavaScript, jQuery, Modern Websites">
+    <meta name="author" content="MK Web Solutions">
+    <link rel="icon" href="imgs/logo.jpg" type="imgs/icon">
+    <link rel="stylesheet" href="src/css/fontaosem.all.min.css">
+    <link rel="stylesheet" href="src/css/aos.css">
+    <link href="src/css/output.css" rel="stylesheet">
+</head>
+
+<body class="dark:bg-black dark:text-white/60">
+    <!-- loader -->
+    <div id="loader" class="fixed inset-0 flex items-center justify-center bg-black/95 z-[999]">
+        <div class="flex flex-col items-center gap-4">
+            <h1 class="font-bold text-7xl text-blue-500">MK</h1>
+            <div class="w-10 h-10 border border-blue-500 rounded-full animate-spin border-t-transparent">
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- nav -->
+    <nav class=" sticky w-full  text-center  z-50 inset-0 ">
+        <div class="flex justify-between items-center px-5 py-2 bg-white/10    backdrop-blur-xl capitalize ">
+            <div>
+                <h1 class="text-4xl md:text-2xl font-bold text-blue-600">MK <span class="hidden md:inline-block"> web
+                        soluions</span></h1>
+            </div>
+            <div class="hidden md:inline-block">
+                <ul class="flex gap-5 mx-auto text-xl font-semibold">
+                    <li><a class="alinks" href="#">Home</a></li>
+                    <li><a class="alinks" href="#about">about</a></li>
+                    <li><a class="alinks" href="#projects">projects</a></li>
+                    <li><a class="alinks" href="#testemonials">our parteners</a></li>
+                </ul>
+            </div>
+            <div class="flex gap-8 items-center ">
+                <button class="primery-btn hidden md:inline-block"> <a href="#contact">contact
+                        us</a></button>
+                <div class="hidden md:inline-block">
+                    <button class="hidden light"><i class="fa-regular fa-sun fa-xl"></i></button>
+                    <button class="dark"><i class="fa-regular fa-moon fa-xl"></i></button>
+                </div>
+            </div>
+
+            <div class="md:hidden">
+                <button id="open"><i class="fa-solid fa-bars-staggered fa-2xl"></i></button>
+                <button id="close" class="hidden"><i class="fa-solid fa-close fa-2xl "></i></button>
+            </div>
+            <div id="sideMenu" class="hidden bg-white absolute w-48 h-80 top-16 right-3 rounded-xl dark:bg-slate-600 ">
+                <ul class="flex flex-col gap-7 pt-8 text-2xl">
+                    <li><a class="alinks" href="#">Home</a></li>
+                    <li><a class="alinks" href="#about">about</a></li>
+                    <li><a class="alinks" href="#projects">projects</a></li>
+                    <li><a class="alinks" href="#testemonials">our parteners</a></li>
+                    <li>
+                        <button class="hidden light"><i class="fa-regular fa-sun fa-xl"></i></button>
+                        <button class="dark"><i class="fa-regular fa-moon fa-xl"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero    -->
+    <section class="pt-20 w-full" data-aos="fade-right">
+        <div class="flex flex-col md:flex-row mx-auto  items-center justify-between px-20">
+            <div class="text-center md:text-start capitalize space-y-5">
+                <h2 class="md:text-6xl text-3xl font-semibold">hello i'm</h2>
+                <h3 class="md:text-8xl text-5xl font-bold">mohamed saleh</h3>
+                <h3 class="md:text-6xl text-3xl font-semibold">fron-end web desiner</h3>
+                <p class="text-gray-400 md:w-3/4">Building responsive, user-friendly websites with modern
+                    technologies.
+                    Specialized in creating seamless digital experiences that combine beautiful design with powerful
+                    functionality.</p>
+
+                <div class="flex gap-5 mx-auto justify-center md:justify-start py-5 ">
+                    <button class="primery-btn">read more > </button>
+                    <button class="secondery-btn">contact us > </button>
+                </div>
+            </div>
+            <div class="relative">
+                <div
+                    class="h-72 w-72 rounded-full bg-fuchsia-400 absolute -z-20 start-1/2 -translate-x-1/2 top-24 blur-2xl">
+
+                </div>
+                <img loading="lazy" src="imgs/hero.png" alt="">
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- about -->
+    <section id="about" class="pt-20  w-full bg-gray-500/10" data-aos="fade-up">
+        <div class="text-center capitalize space-y-4">
+            <h1 class="text-5xl font-bold underline">about Me</h1>
+            <p class="text-gray-700">Passionate Front-End Developer with 4+ years of experience.</p>
+        </div>
+
+        <div class="mx-auto grid grid-cols-1 md:grid-cols-2 justify-center place-items-center mt-10">
+            <div class="relative ">
+                <div class="absolute outline w-48 h-48 outline-fuchsia-400 rounded-lg -z-10 left-10">
+
+                </div>
+                <img loading="lazy" src="imgs/about.png" class="h-80 w-80" alt="">
+            </div>
+            <div class="text-center md:text-start pt-10 capitalize w-full px-20 md:pr-20 md:px-0">
+                <h1 class="text-2xl font-bold underline mb-14">Who Am I ?</h1>
+                <p>I'm a dedicated front-end web developer specializing in creating responsive,
+                    high-performance websites. I have extensive experience working with HTML5, CSS3, JavaScript, jQuery,
+                    and modern frameworks like Tailwind CSS. My focus is on writing clean, maintainable code and
+                    delivering exceptional user experiences. I've successfully completed over 30+ projects for clients
+                    across various industries, from e-commerce platforms to corporate websites and interactive web
+                    applications.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!--servcies-->
+    <section class="pt-20 w-full" data-aos="fade-right">
+        <div class="text-center capitalize space-y-4">
+            <h1 class="text-5xl font-bold underline">services</h1>
+            <p class="text-gray-700">What I offer to help your business grow.</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 px-20 pt-10 text-center gap-3">
+            <div class="card ">
+                <img loading="lazy" src="imgs/p1.png" alt="" class="w-24 h-24 mx-auto">
+                <h1 class="underline font-bold ">Frontend Development</h1>
+                <p class="text-sm mt-2 text-gray-500">Modern, responsive websites</p>
+            </div>
+            <div class="card ">
+                <img loading="lazy" src="imgs/p4.png" alt="" class="w-24 h-24 mx-auto">
+                <h1 class="underline font-bold ">UI/UX Design</h1>
+                <p class="text-sm mt-2 text-gray-500">User-centered design solutions</p>
+            </div>
+            <div class="card ">
+                <img loading="lazy" src="imgs/p3.png" alt="" class="w-24 h-24 mx-auto">
+                <h1 class="underline font-bold ">Website Optimization</h1>
+                <p class="text-sm mt-2 text-gray-500">Speed & SEO improvements</p>
+            </div>
+            <div class="card ">
+                <img loading="lazy" src="imgs/p2.png" alt="" class="w-24 h-24 mx-auto">
+                <h1 class="underline font-bold ">fully responsive</h1>
+                <p class="text-sm mt-2 text-gray-500">Perfect on all devices</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- progress -->
+    <section id="progress" class="pt-20 w-full" data-aos="fade-left">
+        <div class="text-center capitalize space-y-4">
+            <h1 class="text-5xl font-bold underline">technical skills</h1>
+            <p class="text-gray-700">My expertise level in various web technologies.</p>
+        </div>
+        <div class="grid grid-cols-3 md:grid-cols-6 mt-10 gap-5 mx-auto justify-center text-center px-5">
+            <div class="relative w-40 h-40 mt-10">
+                <div class="outer-circle" data-precent="98">
+                    <div class="inner-circle">
+                    </div>
+                </div>
+                <h1 class="text-circle">html</h1>
+            </div>
+            <div class="relative w-40 h-40 mt-10">
+                <div class="outer-circle" data-precent="95">
+                    <div class="inner-circle">
+                    </div>
+                </div>
+                <h1 class="text-circle">bootstrap</h1>
+            </div>
+            <div class="relative w-40 h-40 mt-10">
+                <div class="outer-circle" data-precent="97">
+                    <div class="inner-circle">
+                    </div>
+                </div>
+                <h1 class="text-circle">js</h1>
+            </div>
+            <div class="relative w-40 h-40 mt-10">
+                <div class="outer-circle " data-precent="96">
+                    <div class="inner-circle">
+                    </div>
+                </div>
+                <h1 class="text-circle">jquery</h1>
+            </div>
+            <div class="relative w-40 h-40 mt-10">
+                <div class="outer-circle" data-precent="99">
+                    <div class="inner-circle">
+                    </div>
+                </div>
+                <h1 class="text-circle">tailwindcss</h1>
+            </div>
+            <div class="relative w-40 h-40 mt-10">
+                <div class="outer-circle" data-precent="98">
+                    <div class="inner-circle">
+                    </div>
+                </div>
+                <h1 class="text-circle">html</h1>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- projects -->
+    <section id="projects" class="w-full pt-20" data-aos="fade-right">
+        <div class="text-center capitalize space-y-4">
+            <h1 class="text-5xl font-bold underline">featured projects</h1>
+            <p class="text-gray-700">Real-world projects I've built for clients and businesses.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 capitalize px-10 text-center gap-5 pt-10">
+            <div class="PCard group">
+                <div class="relative">
+                    <img loading="lazy" src="imgs/project1.jpg" alt="">
+                    <div
+                        class="absolute inset-0 transition duration-500 ease-in-out bg-gray-300/50 opacity-0 group-hover:opacity-80 ">
+                        <a href="https://mkpro-one.vercel.app/foodsite/index.html"
+                            class="primery-btn absolute bottom-10  start-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-95 ">View
+                            Demo </a>
+                    </div>
+
+                </div>
+                <div class="p-5">
+                    <h1 class=" mb-2 underline font-bold text-2xl">foodies</h1>
+                    <p class="text-gray-500">A modern food delivery platform with online ordering system, menu
+                        management, and real-time order tracking</p>
+                </div>
+                <div class="flex justify-center gap-2 mt-3">
+                    <span class="text-sm bg-blue-200 px-2 py-1 rounded">html</span>
+                    <span class="text-sm bg-blue-200 px-2 py-1 rounded">css</span>
+                    <span class="text-sm bg-blue-200 px-2 py-1 rounded">js</span>
+                </div>
+            </div>
+            <div class="PCard group">
+                <div class="relative">
+                    <img loading="lazy" src="imgs/project2.jpg" alt="">
+                    <div
+                        class="absolute inset-0 transition duration-500 ease-in-out bg-gray-300/50 opacity-0 group-hover:opacity-80 ">
+                        <a href="https://mkpro-one.vercel.app/ecommerce/index.html"
+                            class="primery-btn absolute bottom-10  start-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-95 ">View
+                            Demo</a>
+                    </div>
+
+                </div>
+                <div class="p-5">
+                    <h1 class=" mb-2 underline font-bold text-2xl">Fashion Hub</h1>
+                    <p class="text-gray-500">E-commerce website for fashion brands with product filtering, shopping
+                        cart, and secure checkout system</p>
+                </div>
+                <div class="flex justify-center gap-2 mt-3">
+                    <span class="text-sm bg-blue-200 px-2 py-1 rounded">html</span>
+                    <span class="text-sm bg-blue-200 px-2 py-1 rounded">css</span>
+                    <span class="text-sm bg-blue-200 px-2 py-1 rounded">js</span>
+                </div>
+            </div>
+            <div class="PCard group">
+                <div class="relative">
+                    <img loading="lazy" src="imgs/project3.jpg" alt="">
+                    <div
+                        class="absolute inset-0 transition duration-500 ease-in-out bg-gray-300/50 opacity-0 group-hover:opacity-80 ">
+                        <a href="https://mkpro-one.vercel.app/instruction%20site/index.html"
+                            class="primery-btn absolute bottom-10  start-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-95 ">View
+                            Demo</a>
+                    </div>
+
+                </div>
+                <div class="p-5">
+                    <h1 class=" mb-2 underline font-bold text-2xl">RealState Pro</h1>
+                    <p class="text-gray-500">Property listing platform with advanced search filters, property details,
+                        and agent contact system.</p>
+                </div>
+                <div class="flex justify-center gap-2 mt-3">
+                    <span class="text-sm bg-blue-200 px-2 py-1 rounded">html</span>
+                    <span class="text-sm bg-blue-200 px-2 py-1 rounded">css</span>
+                    <span class="text-sm bg-blue-200 px-2 py-1 rounded">js</span>
+                </div>
+            </div>
+            <div class="PCard group">
+                <div class="relative">
+                    <img loading="lazy" src="imgs/project4.jpeg" alt="">
+                    <div
+                        class="absolute inset-0 transition duration-500 ease-in-out bg-gray-300/50 opacity-0 group-hover:opacity-80 ">
+                        <button
+                            class="primery-btn absolute bottom-10  start-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-95 ">View
+                            Demo</button>
+                    </div>
+
+                </div>
+                <div class="p-5">
+                    <h1 class=" mb-2 underline font-bold text-2xl">MovieStream</h1>
+                    <p class="text-gray-500">Movie database website with search functionality, ratings, and trending
+                        movies section</p>
+                </div>
+                <div class="flex justify-center gap-2 mt-3">
+                    <span class="text-sm bg-blue-200 px-2 py-1 rounded">html</span>
+                    <span class="text-sm bg-blue-200 px-2 py-1 rounded">css</span>
+                    <span class="text-sm bg-blue-200 px-2 py-1 rounded">js</span>
+                </div>
+            </div>
+            <div class="PCard group">
+                <div class="relative">
+                    <img loading="lazy" src="imgs/project5.jpg" class="h-52" alt="">
+                    <div
+                        class="absolute inset-0 transition duration-500 ease-in-out bg-gray-300/50 opacity-0 group-hover:opacity-80 ">
+                        <a href="https://mkpro-one.vercel.app/website/index.html"
+                            class="primery-btn absolute bottom-10  start-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-95 ">View
+                            Demo <a href=""></a></a>
+                    </div>
+
+                </div>
+                <div class="p-5">
+                    <h1 class=" mb-2 underline font-bold text-2xl">Creative Portfolio</h1>
+                    <p class="text-gray-500">Personal portfolio template for creatives with smooth animations and
+                        responsive design</p>
+                </div>
+                <div class="flex justify-center gap-2 mt-3">
+                    <span class="text-sm bg-blue-200 px-2 py-1 rounded">html</span>
+                    <span class="text-sm bg-blue-200 px-2 py-1 rounded">css</span>
+                    <span class="text-sm bg-blue-200 px-2 py-1 rounded">js</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- timeline -->
+    <section class="w-full pt-20" data-aos="fade-left">
+        <div class="text-center capitalize space-y-4">
+            <h1 class="text-5xl font-bold underline">career journey</h1>
+            <p class="text-gray-700">My professional journey and achievements</p>
+        </div>
+        <div class="text-center">
+            <div class="grid grid-cols-4 px-10 py-10">
+                <div class="relative col-start-1 card hover:scale-100">
+                    <span class="rounded-full px-3 bg-blue-400/40">2020</span>
+                    <h1 class="font-semibold">Started Career</h1>
+                    <p class="text-sm"> First freelance project completed</p>
+                    <div class="dot -bottom-14"></div>
+                </div>
+                <div class="col-start-3 card hover:scale-100">
+                    <span class="rounded-full px-3 bg-blue-400/40">2022</span>
+                    <h1 class="font-semibold"> First Company</h1>
+                    <p class="text-sm"> Joined a leading tech agency</p>
+                    <div class="dot -bottom-14"></div>
+                </div>
+
+            </div>
+            <div class="h-2 bg-blue-400 w-11/12 mx-auto"></div>
+            <div class="grid grid-cols-4 px-10 py-10">
+                <div class="col-start-2 card hover:scale-100">
+                    <div class="dot -top-14"></div>
+                    <span class="rounded-full px-3 bg-blue-400/40">2024</span>
+                    <h1 class="font-semibold">First academy</h1>
+                    <p class="text-sm"> Joined a leading MK front-end academy</p>
+                </div>
+                <div class="col-start-4 card hover:scale-100">
+                    <div class="dot -top-14"></div>
+                    <span class="rounded-full px-3 bg-blue-400/40">2027</span>
+                    <h1 class="font-semibold"> Global Reach</h1>
+                    <p class="text-sm"> Working with international clients</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- testomoinals -->
+    <section id="testemonials" class="w-full pt-20" data-aos="fade-right">
+        <div class="capitalize text-center space-y-4">
+            <h1 class=" text-5xl underline font-bold">client testimonials</h1>
+            <p class="text-gray-400">What my clients say about working with me.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 px-10 mt-10">
+            <div class="testemonial-card">
+                <img loading="lazy" src="imgs/user1.webp" class="mx-auto w-32  h-32 rounded-full" alt="">
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                </div>
+                <div class="text">
+                    <h1 class="font-bold">Omar Farouk</h1>
+                    <h3 class="font-semibold">Founder, EcomStore</h3>
+                    <p>"The e-commerce platform Mohamed built for us is fast, secure, and
+                        user-friendly. Our sales increased by 40% after launch. Great work!"</p>
+                </div>
+            </div>
+            <div class="testemonial-card">
+                <img loading="lazy" src="imgs/user2.jpg" class="mx-auto w-32  h-32 rounded-full" alt="">
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                </div>
+                <div class="text">
+                    <h1 class="font-bold">Ahmed Mansour</h1>
+                    <h3 class="font-semibold">CEO, TechStart Egypt</h3>
+                    <p>"Mohamed delivered an exceptional website for our startup. His attention to
+                        detail and technical expertise exceeded our expectations. Highly recommended"</p>
+                </div>
+            </div>
+            <div class="testemonial-card">
+                <img loading="lazy" src="imgs/user3.avif" class="mx-auto w-32  h-32 rounded-full" alt="">
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                </div>
+                <div class="text">
+                    <h1 class="font-bold">Sarah Khalid</h1>
+                    <h3 class="font-semibold">Marketing Director, CreativeHub</h3>
+                    <P>"Working with Mohamed was a pleasure. He understood our brand vision
+                        perfectly and created a stunning, responsive website that our clients love"</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- contact us -->
+    <section id="contact" class="w-full pt-20" data-aos="fade-left">
+        <div class="capitalize text-center space-y-4">
+            <h1 class=" text-5xl underline font-bold">get in touch</h1>
+            <p class="text-gray-400">Let's discuss your next project. I'm ready to help.</p>
+        </div>
+
+        <div class="flex justify-center items-center px-10 capitalize text-center pt-10">
+            <div class="border w-full pt-5 rounded-xl">
+                <form>
+                    <div>
+                        <label for="fullname" class="text-gray-500 text-lg">enter your name</label>
+                        <input class="input" type="text" name="fullname" required placeholder="Full Name" id="">
+                    </div>
+                    <div><label for="email" class="text-gray-500 text-lg">enter your email</label>
+                        <input class="input" type="email" name="email" required placeholder="Enter Your Mail" id="">
+                    </div>
+                    <div><label for="fullname" class="text-gray-500 text-lg">enter your massage</label>
+                        <textarea name="" id="" class="input h-40"></textarea>
+                    </div>
+                    <button class="primery-btn w-11/12 capitalize my-4 font-bold text-xl ">send massege</button>
+                </form>
+            </div>
+            <div class="h-[520px] rounded-xl flex items-center bg-white">
+                <img loading="lazy" src="imgs/contact-1.jpg" class="hidden md:inline-block  bg-contain" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-slate-800 w-full mt-20">
+        <div
+            class="flex justify-between items-center text-center flex-col md:flex-row text-white pt-10 px-20 capitalize gap-8 ">
+            <div class="space-y-5">
+                <h2 class="text-5xl text-blue-500 font-bold">MK</h2>
+                <p>Creating digital experiences that matter.</p>
+            </div>
+            <div class="space-y-5">
+                <h1 class="text-2xl text-blue-500 font-bold">contact info :</h1>
+                <h3>Phone : +20 122 894 873</h3>
+                <h3>Email : info@mkwebsolutions.com</h3>
+            </div>
+            <div class="space-y-5">
+                <h1 class="text-2xl text-blue-500 font-bold">social links :</h1>
+                <div>
+                    <a href="https://www.linkedin.com/in/mohamed-ahmed-saleh-2945ba237/"><i
+                            class="fa-brands fa-linkedin fa-2xl" style="color: rgb(116, 192, 252);"></i></a>
+                    <a href="https://www.facebook.com/mkforwebsolutions"><i class="fa-brands fa-facebook fa-2xl"
+                            style="color: rgb(116, 192, 252);"></i></a>
+                    <a href="https://www.tiktok.com/@mk_web_solutions"><i class="fa-brands fa-tiktok fa-2xl"
+                            style="color: rgb(116, 192, 252);"></i></a>
+                    <a href="https://github.com/mohamedsaleh445"><i class="fa-brands fa-github fa-2xl"
+                            style="color: rgb(116, 192, 252);"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-white pt-10">
+            <h2>Designed & Developed by <span class="text-blue-500">Mohamed Saleh </span> | MK Web Solutions</h2>
+        </div>
+    </footer>
+
+
+    <script src="src/js/aos.js"></script>
+    <script src="src/js/fontwosem.all.js"></script>
+    <script src="src/js/jquery-3.7.1.min.js"></script>
+    <script src="src/js/main.js"></script>
+</body>
+
+</html>
